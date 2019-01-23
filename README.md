@@ -27,7 +27,7 @@ Within elasticsearch, the index name is `playgrounds`, the type name is `locatio
 1. Install [docker](https://www.docker.com/get-started) and
    [docker-compose](https://docs.docker.com/compose/install/)
 2. Add at least three more playgrounds to the search index. See
-   [search.sh](search.sh) to see how to add documents to the search index using
+   [setup.sh](setup.sh) to see how to add documents to the search index using
    CURL.
 3. Create a service in [docker-compose.yml](docker-compose.yml) for your
    service.
