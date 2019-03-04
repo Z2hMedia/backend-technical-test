@@ -1,0 +1,41 @@
+syntax = "proto3";
+package play;
+option go_package "play";
+
+message FizzBuzzRequest {
+  int32 input = 1;
+}
+message FizzBuzzResponse {
+  string output = 1;
+}
+
+message StatsRequest {
+  repeated int32 values = 1;
+}
+message StatsResponse {
+  int32 min = 1;
+  int32 max = 2;
+  double median = 3;
+}
+
+message CodeInput {
+  string input = 1;
+}
+message CodeOutput {
+  string output = 1;
+}
+
+message JosephusInput {
+  int32 n = 1;
+  int32 k = 2;
+}
+message JosephusOutput {
+  int32 s = 1;
+}
+
+service Playgrounds {
+  rpc FizzBuzz(FizzBuzzRequest) returns (FizzBuzzResponse) {}
+  rpc Stats(StatsRequest) returns (StatsResponse) {}
+  rpc Morse(CodeInput) returns (CodeOutput) {}
+  rpc Josephus(JosephusInput) returns (JosephusOutput) {}
+}
