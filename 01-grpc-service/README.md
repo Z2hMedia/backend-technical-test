@@ -16,6 +16,8 @@ It contains several message types and a service with the following methods:
 
 Each of these methods is explained more in detail below.
 
+To complete this challenge, write a server in Go ( NodeJS or Ruby also acceptable, but Go is preferred ) that fufils the server interface defined in the protobuf.
+
 ## FizzBuzz
 
 This method takes in a single number as input.
