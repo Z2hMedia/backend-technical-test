@@ -21,7 +21,7 @@ The application should do the following:
 
 ## Backend
 
-The backend should be written in Go.
+The backend should be written in Go, NodeJS, or Ruby -- although Go is preferred.
 
 ## Front-End
 
